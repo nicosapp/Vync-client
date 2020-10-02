@@ -7,6 +7,11 @@
           <div>Mention légale</div>
         </li>
       </ul>
+      <ul class="flex">
+        <li>LinkedIn</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
     </div>
   </div>
 </template>

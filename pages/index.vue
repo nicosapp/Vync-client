@@ -19,6 +19,7 @@
         </div>
       </div>
     </section>
+    <Divider direction="top right" :size="5" class="text-theme fill-current" />
     <section class="py-16">
       <div class="container">
         <div class="flex justify-center mb-10">
