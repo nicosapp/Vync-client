@@ -35,9 +35,7 @@
           <div class="lg:w-6/12">
             <div
               class="bg-contain bg-cover bg-center h-64 bg-no-repeat"
-              style="
-                background-image: url('https://assets.landen.co/1/taking_notes_tjaf.svg');
-              "
+              style="background-image: url('https://via.placeholder.com/200')"
             ></div>
           </div>
         </div>
@@ -48,9 +46,7 @@
           <div class="lg:w-6/12">
             <div
               class="bg-contain bg-cover bg-center h-64 bg-no-repeat"
-              style="
-                background-image: url('https://assets.landen.co/1/all_the_data_h4ki.svg');
-              "
+              style="background-image: url('https://via.placeholder.com/200')"
             ></div>
           </div>
           <div class="lg:w-6/12 flex justify-end">
@@ -67,9 +63,7 @@
           <div class="lg:w-6/12">
             <div
               class="bg-contain bg-cover bg-center h-64 bg-no-repeat"
-              style="
-                background-image: url('https://assets.landen.co/1/career_progress_ivdb.svg');
-              "
+              style="background-image: url('https://via.placeholder.com/200')"
             ></div>
           </div>
         </div>

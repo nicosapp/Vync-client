@@ -8,9 +8,9 @@
         </li>
       </ul>
       <ul class="flex">
-        <li>LinkedIn</li>
-        <li>Twitter</li>
-        <li>Facebook</li>
+        <li><IconLinkedin class="fill-current h-6 w-6" /></li>
+        <li><IconTwitter class="fill-current h-6 w-6 ml-3" /></li>
+        <li><IconFacebook class="fill-current h-6 w-6 ml-3" /></li>
       </ul>
     </div>
   </div>
