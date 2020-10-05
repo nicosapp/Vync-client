@@ -27,7 +27,7 @@
         </div>
 
         <div
-          class="section lg:w-10/12 mx-auto flex items-center justify-between"
+          class="section ml-10 lg:w-10/12 lg:mx-auto flex items-center justify-between"
         >
           <div class="lg:w-6/12">
             <ZigZagItem number="#1" text="Comprendre votre besoin" />
@@ -41,7 +41,7 @@
         </div>
 
         <div
-          class="section lg:w-10/12 mx-auto flex items-center justify-between"
+          class="section ml-10 lg:w-10/12 mx-auto flex items-center justify-between"
         >
           <div class="lg:w-6/12">
             <div
@@ -55,7 +55,7 @@
         </div>
 
         <div
-          class="section lg:w-10/12 mx-auto flex items-center justify-between"
+          class="section ml-10 lg:w-10/12 mx-auto flex items-center justify-between"
         >
           <div class="lg:w-6/12">
             <ZigZagItem number="#3" text="Définir la solution appropriée" />
@@ -77,6 +77,20 @@ import ZigZagItem from './index/ZigZagItem'
 export default {
   components: {
     ZigZagItem,
+  },
+  head() {
+    return {
+      title: 'Home',
+      // meta: [
+      //   {
+      //     hid: 'description',
+      //     name:
+      //       "bureau d'étude en électronique et développement d'applications web et mobile",
+      //     content:
+      //       "Vync.fr, bureau d'étude en électronique et développement d'applications web et mobile",
+      //   },
+      // ],
+    }
   },
 }
 </script>

@@ -7,11 +7,17 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Vync',
+    titleTemplate: '%s - Vync.fr',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name:
+          "bureau d'étude en électronique et développement d'applications web et mobile",
+        content:
+          "Vync.fr, bureau d'étude en électronique et développement d'applications web et mobile. Nous vous accompagnons dans vos projets",
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -46,6 +52,31 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    [
+      'nuxt-i18n',
+      {
+        // vueI18nLoader: true,
+        defaultLocale: 'fr',
+        strategy: 'no_prefix',
+        // parsePages: false,
+        locales: [
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js',
+          },
+          {
+            name: 'Français',
+            code: 'fr',
+            iso: 'fr-FR',
+            file: 'fr-FR.js',
+          },
+        ],
+        lazy: true,
+        langDir: 'locales/',
+      },
+    ],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
