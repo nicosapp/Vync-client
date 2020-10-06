@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="py-16">
-      <div class="flex justify-center my-10">
+      <div class="flex h-40 items-center justify-center my-10">
         <ScrambleTextAnimation
-          class="text-4xl text-gray-800 lg:w-9/12 text-center"
+          class="text-4xl text-gray-800 lg:w-9/12 lg:mx-auto mx-4 text-center"
           dud-color="#CBD5E0"
           :phrases="phrases"
         />
