@@ -1,14 +1,14 @@
 <template>
   <div class="flex items-center justify-between">
     <a
-      v-for="locale in $i18n.locales.reverse()"
-      :key="locale.code"
+      v-for="locale in ['fr', 'en']"
+      :key="locale"
       href="#"
       class="text-gray-500"
-      :class="{ 'text-gray-900': $i18n.locale === locale.code }"
-      @click.prevent="$i18n.setLocale(locale.code)"
+      :class="{ 'text-gray-900': $i18n.locale === locale }"
+      @click.prevent="$i18n.setLocale(locale)"
     >
-      {{ locale.name.substring(0, 2).toUpperCase() }}
+      {{ locale.toUpperCase() }}
     </a>
   </div>
 </template>

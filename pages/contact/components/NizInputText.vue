@@ -14,9 +14,7 @@
       v-else
       rows="6"
       class="outline-none border-0 bg-gray-200 w-full py-2 px-2 rounded"
-    >
-      fdqfs
-    </textarea>
+    ></textarea>
   </div>
 </template>
 <script>

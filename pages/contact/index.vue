@@ -36,12 +36,12 @@
           </p>
 
           <form @submit.prevent="send">
-            <NizForm label="Prénom" :required="true" />
-            <NizForm label="Nom" :required="true" />
-            <NizForm label="Email" :required="true" />
-            <NizForm label="Téléphone" :required="true" />
-            <NizForm label="Société" :required="true" />
-            <NizForm label="Message" :required="true" :textarea="true" />
+            <NizInputText label="Prénom" :required="true" />
+            <NizInputText label="Nom" :required="true" />
+            <NizInputText label="Email" :required="true" />
+            <NizInputText label="Téléphone" :required="true" />
+            <NizInputText label="Société" :required="true" />
+            <NizInputText label="Message" :required="true" :textarea="true" />
             <div class="text-center">
               <input
                 type="submit"
@@ -56,15 +56,20 @@
   </div>
 </template>
 <script>
-import NizForm from './components/NizForm'
+import NizInputText from './components/NizInputText'
 export default {
   components: {
-    NizForm,
+    NizInputText,
   },
   methods: {
     send() {
       console.log('send')
     },
+  },
+  head() {
+    return {
+      title: 'Contact',
+    }
   },
 }
 </script>

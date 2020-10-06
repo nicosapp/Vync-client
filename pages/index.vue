@@ -1,21 +1,33 @@
 <template>
   <div>
-    <section class="py-16 bg-theme text-gray-200">
-      <div class="container">
+    <section class="py-16">
+      <div class="flex justify-center my-10">
+        <ScrambleTextAnimation
+          class="text-4xl text-gray-800 lg:w-9/12 text-center"
+          dud-color="#CBD5E0"
+          :phrases="phrases"
+        />
+      </div>
+    </section>
+    <section class="py-16 bg-theme text-gray-200 overflow-hidden">
+      <div class="container flex lg:flex-no-wrap flex-wrap">
         <div class="lg:w-7/12">
           <h2 class="text-4xl font-bold mb-5">
             VYNC est spécialisée dans la conception et le développement de
             solutions digitales sur-mesure.
           </h2>
-          <h3 class="lg:w-9/12 text-2xl font-medium mb-5">
+          <h3 class="float-left lg:w-9/12 text-2xl font-medium mb-5">
             Vous souhaitez automatiser vos tâches, améliorer l’UX de vos outils,
             injecter de l’intelligence dans vos processus métier ?
           </h3>
-          <p class="lg:w-9/12 text-xl">
+          <p class="float-left lg:w-9/12 text-xl">
             Notre agence experte analyse vos besoins, pilote vos projets, et
             vous accompagne dans la conception et le développement de vos
             projets digitaux dans la durée
           </p>
+        </div>
+        <div class="lg:w-5/12 hidden lg:flex">
+          <HomeAnimation />
         </div>
       </div>
     </section>
@@ -77,6 +89,19 @@ import ZigZagItem from './index/ZigZagItem'
 export default {
   components: {
     ZigZagItem,
+  },
+  data() {
+    return {
+      phrases: [
+        'Bonjour',
+        'Bienvenue chez Vync.fr',
+        "Nous sommes un bureau d'étude",
+        'En électronique',
+        "Et développement d'applications web et mobile",
+        'Nous aidons nos clients à mener à bien leur projet',
+        'Pourquoi pas vous?',
+      ],
+    }
   },
   head() {
     return {
